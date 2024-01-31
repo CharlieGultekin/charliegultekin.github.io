@@ -14,7 +14,7 @@
 	</head>
 	<body class="is-preload">
 
-		<!-- Header -->
+		<!-- Header --> 
 			<header id="header">
 				<a href="index.html" class="title">University Projects</a>
 				<nav>
@@ -32,11 +32,27 @@
 				<!-- Main -->
 					<section id="main" class="wrapper">
 						<div class="inner">
-							<h1 class="major">Pacman project</h1>
-							<span class="image"><img src="images/capypixel.png" alt="" /></span>
-							<p>Here is my work</p>
-							<p></p>
+							<h1 class="major">Technical games production</h1>
+							<!--<span class="image"><img src="images/capypixel.png" alt="" /></span>-->
+							<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/-ejp3cZk99Y?si=i9TliJSknvKPyAKk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+							<p>Working in a team of 8, we had to produce a game over the span of 12 weeks. The theme of the game is natural elements, such as water. 
+							I was responsible for the creation of the fire-themed level, and I was responsible for the creation of many gameplay elements such as traps
+							and moving components such as air columns and moving platforms, as well as animating the aforementioned traps. 
+
+							In the level you will see that when a player steps onto a platform, it will raise them up, and as soon as they stop standing on the platform, the
+							platform stops moving. This presented many challenges, one of them was with the way in which the platform moved. At first the platform would be 
+							translated up incrementally according to deltaTime, but this would lead to a situation where if the player tried jumping back onto the platform,
+							they would clip through it as the platform gets translated through the player. To rectify it, I changed the platform to use unity's addforce
+							function, as this actually makes the platform actually have a force that affects the world, and thus does not result in a situation where the
+							teleports through the player. I also was responsible for the creation of some of the game's assets, such as the volcano at the end of the level, 
+							which was made in blender. I also had to texture the assets and make the level look like a volcanic eruption.
+							</p>
+							<class="image"><img height = "408" width = "610" src="images/volcano.PNG" alt="" />
+							<p>I thoroughly enjoyed the opportunity to work as a team, and better understand the value that source control tools such as github and perforce, can 
+							bring to the workflow of a project. 
+							</p>
 						</div>
+						
 					</section>
 
 			</div>
