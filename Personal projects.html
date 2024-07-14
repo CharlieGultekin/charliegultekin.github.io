@@ -31,9 +31,9 @@
 
 				<!-- Main -->
 					<section id="main" class="wrapper">
-						<div class="inner">
+						<div class="responsive-container">
 							<h1 class="major"> Unreal Engine gameplay development</h1>
-							<iframe width="256" height="144" src="https://www.youtube.com/embed/aLFKY58iyYY?si=y1OBGlh5UAkzBnVq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+							<iframe src="https://www.youtube.com/embed/aLFKY58iyYY?si=y1OBGlh5UAkzBnVq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 							<p>I took part in the Interactive Real-Time 3D Skills Bootcamp with INFINITY27 on the development course. This involved me working on an 
 								existing game project known as Samsara, which is a dark souls style game with a Buddhist reincarnation theme. During my time I 
 								gained experience with many games industry standard tools such as Unreal Engine 5 and blueprints,source control via Perforce,
@@ -70,4 +70,22 @@
 			<script src="assets/js/main.js"></script>
 
 	</body>
+
+	<style> /* anything in style is css */
+		.responsive-container {
+		  position: relative; /* relative to its default position*/
+		  width: 100%;
+		  padding-bottom: 66.25%; /* 16:9 aspect ratio */
+		  height: 0;
+		}
+  
+		.responsive-container iframe {
+		  position: absolute; /*relative to top left corner */
+		  top: 0;
+		  left: 0;
+		  width: 40%;
+		  height: 50%;
+		  border: 0;
+		}
+	  </style>
 </html>
