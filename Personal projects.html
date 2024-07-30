@@ -30,22 +30,29 @@
 			<div id="wrapper">
 
 				<!-- Main -->
+				<h1 class="major"> Unreal Engine gameplay development</h1>
 					<section id="main" class="wrapper">
 						<div class="responsive-container">
-							<h1 class="major"> Unreal Engine gameplay development</h1>
 							<iframe src="https://www.youtube.com/embed/aLFKY58iyYY?si=y1OBGlh5UAkzBnVq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-							<p>I took part in the Interactive Real-Time 3D Skills Bootcamp with INFINITY27 on the development course. This involved me working on an 
-								existing game project known as Samsara, which is a dark souls style game with a Buddhist reincarnation theme. During my time I 
-								gained experience with many games industry standard tools such as Unreal Engine 5 and blueprints,source control via Perforce,
-								remote working via Parsec to access work laptops, and project management via Hansoft to define the scope of the project. As well 
-								as this I have become more familiar with the developmental process of games companies, and how they use techniques such as AGILE 
-								and SCRUM to perform iterative changes to their projects. As you can see below I have had the pleasure of creating my own spell 
-								within the game, which I have named 'Winds of Fortune'. This is an ability that summons the power of the Tibetan Wind horse to push 
-								back enemies and stuns them for a brief amount of time. It also grants the Player extra max HP and damage if they hit an enemy with 
-								the spell. The purpose of this is so that the player can escape a bad situation if they are surrounded by enemies. Through designing
-								this spell, I have learned much more about how to implement functionality through visual scripting, and how that interfaces with the
-								 game engine to create a completed product. 
-							</p>
+						</p>
+						</div>
+						<div class="text">
+						<p>I took part in the Interactive Real-Time 3D Skills Bootcamp with INFINITY27 on the development course. This involved me working on an 
+							existing game project known as Samsara, which is a dark souls style game with a Buddhist reincarnation theme. During my time I 
+							gained experience with many games industry standard tools such as Unreal Engine 5 and blueprints, source control via Perforce,
+							remote working via Parsec to access work laptops, and project management via Hansoft to define the scope of the project.
+						</p>
+						</div>
+						<div class = "text-bottom">
+							<p>As well as this I have become more familiar with the developmental process of games companies, and how they use techniques such as AGILE 
+							and SCRUM to perform iterative changes to their projects. As you can see below I have had the pleasure of creating my own spell 
+							within the game, which I have named 'Winds of Fortune'. This is an ability that summons the power of the Tibetan Wind horse to push 
+							back enemies and stuns them for a brief amount of time. It also grants the Player extra max HP and damage if they hit an enemy with 
+							the spell. The purpose of this is so that the player can escape a bad situation if they are surrounded by enemies. Through designing
+							this spell, I have learned much more about how to implement functionality through visual scripting, and how that interfaces with the
+							game engine to create a completed product. 
+						</p>
+
 						</div>
 					</section>
 
@@ -55,7 +62,7 @@
 			<footer id="footer" class="wrapper alt">
 				<div class="inner">
 					<ul class="menu">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; Hyperspace. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</div>
 			</footer>
@@ -72,20 +79,62 @@
 	</body>
 
 	<style> /* anything in style is css */
+	    
 		.responsive-container {
 		  position: relative; /* relative to its default position*/
 		  width: 100%;
-		  padding-bottom: 66.25%; /* 16:9 aspect ratio */
+		  padding-bottom: 56.25%; /* 16:9 aspect ratio */
 		  height: 0;
+		  
 		}
   
 		.responsive-container iframe {
+	
 		  position: absolute; /*relative to top left corner */
-		  top: 0;
-		  left: 0;
-		  width: 40%;
-		  height: 50%;
-		  border: 0;
+
+		  border-radius: 10px;
+		  width: 100%;
+		  height: 100%;
+		  border: 3px solid #fff;
 		}
+		
+		body {
+        	margin: 0;
+        	padding: 0;
+      	}
+
+      .wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: auto;
+        gap: 20px;
+        padding: 20x;
+        font-size: 1.6vw;
+        margin: 0 auto;
+      }
+
+      .text {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+		color : #fff;
+      }
+
+      .text-bottom {
+        grid-column: 1 / 3;
+        grid-row: 2 / 3;
+		color : #fff;
+			
+      }
+
+      .image {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+      }
+
+      .image img {
+        max-width: 100%;
+        height: auto;
+        border: 1px solid #ccc;
+      }
 	  </style>
 </html>
